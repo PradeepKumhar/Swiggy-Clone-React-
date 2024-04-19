@@ -12,9 +12,9 @@ const handleAddItems = (item) =>{
 
   const items = item.data;
   return (
-    <div>
+    <div >
       {items.map((item) => (
-        <div
+        <div data-testid="foodItems"
           key={item?.card.info.id}
           className=" p-2 m-2 flex justify-between border-gray-200 border-b-2 text-left"
         >

@@ -14,7 +14,7 @@ const useRestMenu = (resId) => {
     const json = await data.json();
     setresInfo(json?.data);
   }
- console.log(resInfo);
+ 
 
   return resInfo;
 };

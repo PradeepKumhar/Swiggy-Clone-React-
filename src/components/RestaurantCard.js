@@ -8,7 +8,7 @@ const RestaurantCard = (props) => {
     console.log(resData);
 
     return (
-        <div className='p-4 m-2 w-[250px] h-[410px] bg-gray-100 hover:bg-gray-200  rounded-lg'>
+        <div data-testid="resCard" className='p-4 m-2 w-[250px] h-[410px] bg-gray-100 hover:bg-gray-200  rounded-lg'>
             <img className='rounded-lg w-60 h-36' src={CDN_URL + resData?.info?.cloudinaryImageId} alt={name} />
             <h3 className='font-bold py-4 text-lg'>{name}</h3>
             <div className='res-details'>

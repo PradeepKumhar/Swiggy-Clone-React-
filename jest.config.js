@@ -193,6 +193,15 @@ const config = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
+  transformIgnorePatterns: [
+    "/node_modules/",
+    "\\.pnp\\.[^\\\\]+$",
+    "\\.png$" // Exclude .png files from being transformed
+  ],
+
+  // Test environment configuration
+  testEnvironment: "jsdom",
+
 };
 
 module.exports = config;
